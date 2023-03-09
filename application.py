@@ -10,8 +10,6 @@ application = Flask(__name__)
 def index():
   
   # Set path Selenium
-  CHROMEDRIVER_PATH = '/usr/local/bin/chromedriver'
-  s = Service(CHROMEDRIVER_PATH)
   WINDOW_SIZE = "1920,1080"
 
   # Options
