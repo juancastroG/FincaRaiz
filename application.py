@@ -17,7 +17,7 @@ def index():
   chrome_options.add_argument("--headless")
   chrome_options.add_argument("--window-size=%s" % WINDOW_SIZE)
   chrome_options.add_argument('--no-sandbox')
-  driver = webdriver.Chrome(executable_path='/grecko/geckodriver')
+  driver = webdriver.Chrome(executable_path='geckodriver')
 
   # Get the response and print title
   driver.get("https://www.fincaraiz.com.co/finca-raiz/venta/chapinero/bogota")
