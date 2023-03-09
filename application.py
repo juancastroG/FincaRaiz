@@ -8,6 +8,7 @@ application = Flask(__name__)
 
 @application.route('/')
 def index():
+  '''
   # Set path Selenium
   CHROMEDRIVER_PATH = '/usr/local/bin/chromedriver'
   s = Service(CHROMEDRIVER_PATH)
@@ -26,7 +27,8 @@ def index():
   return contenedor.text
 
   driver.close()
-  
+  '''
+  return "ShelsyHola"
 if __name__ == '__main__':
     application.run(debug=True)
     application.run(host='0.0.0.0', port=80)
